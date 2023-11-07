@@ -17,12 +17,12 @@ import sys
 sys.path.append('sites')
 
 # sites implemented so far
-from allrecipes import AllRecipes
-from epicurious import Epicurious
-from foodnetwork import FoodNetwork
-from saveur import Saveur
-from sirogohan import SiroGohan
-from wsonoma import WilliamsSonoma
+from sites.allrecipes import AllRecipes
+from sites.epicurious import Epicurious
+from sites.foodnetwork import FoodNetwork
+from sites.saveur import Saveur
+from sites.sirogohan import SiroGohan
+from sites.wsonoma import WilliamsSonoma
 
 AVAILABLE = {
   'AllRecipes' : AllRecipes,
@@ -71,12 +71,12 @@ if __name__ == "__main__":
     if len(sys.argv) < 4:
         # Define the usage
         possibleSources = sorted(AVAILABLE.keys())
-        print(sys.argv[0], \
-          '[site: (' + '|'.join(possibleSources) +')]', \
-          '[file of seed urls]', \
-          '[threads]', \
-          '[save() (defaults to True)]', \
-          '[store() database (defaults to None)]', \
+        print(sys.argv[0],
+          '[site: (' + '|'.join(possibleSources) +')]',
+          '[file of seed urls]',
+          '[threads]',
+          '[save() (defaults to True)]',
+          '[store() database (defaults to None)]',
           '[store() collection (defaults to None)]')
     else:
         # Do the deed

@@ -13,7 +13,7 @@ PAUSE_CRAWLER = True
 PAUSE_TIME_RANGE = (10, 60)
 
 # Define where the scraped and parsed results will be saved
-OUTPUT_FOLDER = '/tmp'
+OUTPUT_FOLDER = '/users/Nelson/Desktop'
 
 # Define credentials for using a service running ARMS (http://github.com/dpapathanasiou/ARMS)
 ARMS = {
