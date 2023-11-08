@@ -17,12 +17,12 @@ import sys
 sys.path.append('sites')
 
 # sites implemented so far
-from sites.allrecipes import AllRecipes
-from sites.epicurious import Epicurious
-from sites.foodnetwork import FoodNetwork
-from sites.saveur import Saveur
-from sites.sirogohan import SiroGohan
-from sites.wsonoma import WilliamsSonoma
+from allrecipes import AllRecipes
+from epicurious import Epicurious
+from foodnetwork import FoodNetwork
+from saveur import Saveur
+from sirogohan import SiroGohan
+from wsonoma import WilliamsSonoma
 
 AVAILABLE = {
   'AllRecipes' : AllRecipes,
